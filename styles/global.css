@@ -1,0 +1,206 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.65;
+  color: #333;
+}
+
+.answer-area {
+  white-space: pre-wrap;
+  margin-top: 1rem;
+  font-size: 1.15rem;
+}
+
+.our-form {
+  display: flex;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 4rem;
+}
+
+.prompt-field {
+  flex: 1;
+  color: #333;
+  padding: 5px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.prompt-button {
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(46, 98, 255);
+}
+
+@-webkit-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  -moz-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border: 8px solid #777;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  border-bottom: 1px dotted rgb(192, 192, 192);
+  max-width: 40rem;
+  height: 3rem;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  position: sticky;
+  top: 0rem;
+  padding: 0.2rem;
+  background: white;
+}
+
+.footer p {
+  background: white;
+}
+
+.footer a {
+  color: #999;
+  margin: 0 10px;
+}
+
+.messages{
+  list-style-type: none;
+}
+
+
+.messages:nth-child(odd) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+
+.messages:nth-child(odd)::after{
+  content: ' ';
+  background-image: url("./user.png");
+  background-color: #cccccc; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  position: relative;
+  right: -1rem;
+  width: 1.5rem;
+  height: 1.5rem; 
+  border-radius: 50px;
+  padding: 0.3rem;
+  z-index: -1;
+}
+
+.messages:nth-child(even){
+  /* background-image: url('./icon.png'); */
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.messages:nth-child(even)::before{
+  content: ' ';
+  background-image: url("./bot.png");
+  background-color: #cccccc; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  position: relative;
+  left: -1rem;
+  width: 2rem;
+  height: 2rem; 
+  border-radius: 50px;
+  padding: 0.2rem;
+  z-index: -1;
+}
+
+.messages span{
+    border: #5d4f9c 1px solid;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 20px;
+    background:#947dfc;
+    color: white;
+    max-width:15rem;
+}

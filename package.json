@@ -1,0 +1,22 @@
+{
+  "name": "next",
+  "version": "1.0.0",
+  "description": "This is a basic example of how to have a serverless publicly available website that does **not** leak your OpenAI API key to the public.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.1.5",
+    "nextjs": "^0.0.3",
+    "openai": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
